@@ -18,9 +18,10 @@ return new class extends Migration
             $table->string('telefono');
             $table->string('email')->unique();
             $table->string('direccion');
+            $table->string('password');
             $table->timestamps();
         });
-        $table->string('password');
+        
     }
 
     /**
